@@ -1,0 +1,44 @@
+<!--
+  BREAKPOINT
+  1. Run locally: open this file directly in any modern browser.
+  2. Deploy to GitHub Pages: upload index.html, styles.css, and script.js to a repository root, then enable GitHub Pages for that branch.
+  3. File guide:
+     - index.html: app shell and semantic structure
+     - styles.css: visual design, layout, animation, and responsive behavior
+     - script.js: game data, rendering, scoring, screen flow, and interactivity
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breakpoint | Team Simulation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="topbar">
+      <div class="brand-lockup">
+        <span class="brand-kicker">Organizational Behavior Simulation</span>
+        <h1 class="brand-title">Breakpoint</h1>
+      </div>
+
+      <div class="topbar-actions">
+        <button class="ghost-button" id="headerRolesButton" type="button">Team Roles</button>
+        <button class="ghost-button" id="headerResetButton" type="button">Reset</button>
+      </div>
+    </header>
+
+    <main id="app" class="screen-host" aria-live="polite"></main>
+
+    <footer class="footer-note">Educational team-role simulation</footer>
+  </div>
+
+  <div id="modalRoot" class="modal-root hidden" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
